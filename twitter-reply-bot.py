@@ -52,7 +52,7 @@ class TwitterBot:
 
         # Initialize the language model w/ temperature of .5 to induce some creativity
         self.llm = ChatOpenAI(
-            temperature=0.5, openai_api_key=OPENAI_API_KEY, model_name="gpt-4"
+            temperature=0.5, openai_api_key=OPENAI_API_KEY, model_name="gpt-4o"
         )
 
         # For statics tracking for each run. This is not persisted anywhere, just logging
